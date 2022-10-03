@@ -1,4 +1,5 @@
 "use strict";
+// https://leetcode.com/problems/ransom-note/
 function canConstruct(ransomNote, magazine) {
     var noteMap = new Map();
     var magzMap = new Map();
