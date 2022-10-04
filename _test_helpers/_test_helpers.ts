@@ -9,3 +9,13 @@ export function arraysEqual(actual: Array<string>, expected: Array<string>) {
 
     return true
 }
+
+export class MyNode {
+    val: number;
+    next: MyNode | null;
+
+    constructor(val: number, next?: MyNode) {
+        this.val = val;
+        this.next = (next === undefined ? null: next) ;
+    }
+}

@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.arraysEqual = void 0;
+exports.MyNode = exports.arraysEqual = void 0;
 function arraysEqual(actual, expected) {
     if (actual.length !== expected.length)
         return false;
@@ -11,3 +11,11 @@ function arraysEqual(actual, expected) {
     return true;
 }
 exports.arraysEqual = arraysEqual;
+var MyNode = /** @class */ (function () {
+    function MyNode(val, next) {
+        this.val = val;
+        this.next = (next === undefined ? null : next);
+    }
+    return MyNode;
+}());
+exports.MyNode = MyNode;
